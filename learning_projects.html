@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Projects</title>
+    <link rel="stylesheet" type="text/css" href="projectStyle.css">
+    
+    
+  </head>
+  
+  <body>
+    
+    <h1>Learning Projects</h1>
+    
+
+    
+    <div class="dropdown">
+      <button onclick="toggleDropdown()" class="dropbtn">Automata</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="https://mroll21.github.io/Explo-in-Engineering/make_this_page">1st Cardboard Automaton</a>
+        
+      </div>
+    </div>
+    
+    
+    
+    <!--<p></p>-->
+    
+    <!--<div class="dropdown">-->
+    <!--  <button onclick="toggleDropdown2()" class="dropbtn">Dropdown2</button>-->
+    <!--  <div id="myDropdown2" class="dropdown-content">-->
+    <!--    <a href="#">Link 4</a>-->
+    <!--    <a href="#">Link 5</a>-->
+    <!--  </div>-->
+    <!--</div>-->
+    
+    
+    
+    
+    
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function toggleDropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // function toggleDropdown2() {
+    //   document.getElementById("myDropdown2").classList.toggle("show");
+    // }
+    //there must be a better way than making a function for each button
+    
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    
+    </script>
+
+    
+    
+    
+  </body>
+</html>
